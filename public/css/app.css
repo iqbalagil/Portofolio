@@ -13803,6 +13803,12 @@ input:checked + .toggle-bg {
 .pt-\[50px\] {
   padding-top: 50px;
 }
+.pb-8 {
+  padding-bottom: 2rem;
+}
+.pt-\[200px\] {
+  padding-top: 200px;
+}
 .text-center {
   text-align: center;
 }

@@ -36,21 +36,21 @@ class UserController extends Controller
 
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect()->route('app.login')->with('sucsess', 'Anda berhasil login');
+        return redirect()->route('login');
     }
 
 
-#Sistem Register
-    public function store(){
-        $validate = $request->validate([
-            'nama' => 'required',
-            'email' => 'required|unique:users,email',
-            'password' => 'required'
-        ]);
-        $data = $request->except('confirm-password', 'password');
-        $data['password'] = UserController::make($request->password);
-        User::create($data);
-        return redirect('/login');
+// #Sistem Register
+//     public function store(){
+//         $validate = $request->validate([
+//             'nama' => 'required',
+//             'email' => 'required|unique:users,email',
+//             'password' => 'required'
+//         ]);
+//         $data = $request->except('confirm-password', 'password');
+//         $data['password'] = UserController::make($request->password);
+//         User::create($data);
+//         return redirect('/login');
 
-    }
+//     }
 }

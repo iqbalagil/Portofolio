@@ -1,4 +1,4 @@
-<div x-data="{ scrolled: false }" @scroll.window="scrolled = (window.scrollY > 0)">
+<div x-data="{ scrolled: false }" @scroll.window="scrolled = (window.scrollY > 0)" class="pb-8">
     <header x-bind:class="{ 'bg-transparent ': scrolled, 'bg-white': !scrolled }"
         class="fixed top-0 z-10 w-full transition-all duration-300 ease-in-out backdrop-blur-lg">
         <div
@@ -20,10 +20,10 @@
                           </div>
                           
                 
-                <div class="flex order-2 px-2 py-2 space-x-4">
-                  <form action="{{url('doLogout')}}">
+                <div class="flex order-2 px-2 py-2 mt-4 space-x-4">
                     @csrf
-                <a href="">Logout</a>
+                  <form action="{{route('doLogout')}}" method="POST">
+                <button type="submit" class="mt-2 text-2xl">Logout</button>
               
               </form>
                 <button class="px-2 py-2 mb-8 rounded-md bg-gradient-to-r from-rose-400 to-red-500">

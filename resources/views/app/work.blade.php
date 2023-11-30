@@ -1,6 +1,6 @@
 @extends('layout.form')
 @section('isi')
-<div class="text-[45px] flex justify-center mx-auto sm:max-w-none pb-20 pt-[100px]">
+<div class="text-[45px] flex justify-center mx-auto sm:max-w-none pb-20 pt-[200px]">
     <div class="inline-block font-[700] text-black dark:text-white">
         <h1>PROJECT</h1>
     </div>

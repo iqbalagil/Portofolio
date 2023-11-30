@@ -24,11 +24,13 @@ Route::post('/submit',[PortoController::class,'submit'])->name('submit');
 Route::get('/message',[PortoController::class,'message'])->name('message');
 Route::resource('posts',PostController::class);
 
+#Login
 Route::get("login", [UserController::class, 'login'])->name('login');
 Route::post("/do-login", [UserController::class, 'doLogin'])->name('doLogin');
-Route::post("/do-logout", [UserController::class, 'doLogut'])->name('doLogout');
+Route::post("/do-logout", [UserController::class, 'doLogout'])->name('doLogout');
 
-Route::get("register", [UserController::class, 'register'])->name('register');
+#Register
+// Route::get("register", [UserController::class, 'register'])->name('register');
 Route::post("register", [UserController::class, 'store'])->name('store');
 Route::get("/sample", [UserController::class, 'createSample'])->name('sample');
 

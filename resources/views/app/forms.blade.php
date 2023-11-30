@@ -1,8 +1,9 @@
 @extends('layout.form')
 
 @section('isi')
-<div class="p-5 flex justify-center mt-[50px] bg-[url('/asset/contact.svg')] bg-repeat-round bg-blend-hard-light bg-w-[1000px] ">
-    <form class="pt-[50px]  max-w-[900px] p-[100px] bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" method="POST" action="{{route('posts.store')}}">
+<div class="pt-[100px]">
+<div class="p-5 flex justify-center mt-[50px] bg-[url('/asset/contact.svg')] bg-repeat-round bg-blend-hard-light bg-w-[1000px]  ">
+    <form class="pt-[200px]  max-w-[900px] p-[100px] bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" method="POST" action="{{route('posts.store')}}">
         @csrf
         <div class="block p-4">
             <label for="nama" class="text-xl">Nama</label>
@@ -37,6 +38,7 @@
             </button>
         </div>
     </form>
+</div>
 </div>
 
 
