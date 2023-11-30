@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.poppins {
+    font-family: 'Poppins';
+}
+
+.scrollable-container {
+    height: 400px; /* Adjust the height as per your design */
+    overflow-y: scroll;
+}
+
+.scrolls::-webkit-scrollbar {
+    width: 0;
+}
+
+.smooth {
+  transition: all 1s ease-in;
+}
